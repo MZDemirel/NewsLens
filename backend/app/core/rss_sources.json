@@ -1,0 +1,26 @@
+{
+  "sources": [
+    { "name": "Hürriyet", "category": "gundem", "url": "https://www.hurriyet.com.tr/rss/anasayfa" },
+    { "name": "NTV", "category": "gundem", "url": "https://www.ntv.com.tr/gundem.rss" },
+    { "name": "BBC Türkçe", "category": "gundem", "url": "https://feeds.bbci.co.uk/turkce/rss.xml" },
+
+    { "name": "Fotomaç", "category": "spor", "url": "https://www.fotomac.com.tr/rss/anasayfa.xml" },
+    { "name": "NTV Spor Futbol", "category": "spor", "url": "https://www.ntvspor.net/rss/kategori/futbol" },
+
+    { "name": "Webtekno", "category": "teknoloji", "url": "https://www.webtekno.com/rss.xml" },
+    { "name": "Donanım Haber", "category": "teknoloji", "url": "https://www.donanimhaber.com/rss/tum/" },
+
+    { "name": "Bloomberg HT", "category": "ekonomi", "url": "https://www.bloomberght.com/rss" },
+    { "name": "NTV Ekonomi", "category": "ekonomi", "url": "https://www.ntv.com.tr/ekonomi.rss" },
+
+    { "name": "Evrim Ağacı", "category": "bilim", "url": "https://evrimagaci.org/rss.xml" },
+
+    { "name": "NTV Yaşam", "category": "yasam", "url": "https://www.ntv.com.tr/yasam.rss" },
+
+    { "name": "IGN Türkiye", "category": "eglence", "url": "https://tr.ign.com/feed.xml" },
+
+    { "name": "Capital", "category": "is_dunyasi", "url": "https://www.capital.com.tr/rss/all" },
+
+    { "name": "SavunmaSanayiST", "category": "savunma_sanayi", "url": "https://www.savunmasanayist.com/feed/" }
+  ]
+}

@@ -1,5 +1,10 @@
-"""Haber URL'sinden tam metin çekme servisi (Adım 3'te implement edilecek)."""
 from __future__ import annotations
+
+import logging
+
+import trafilatura
+
+logger = logging.getLogger(__name__)
 
 
 def extract_full_text(url: str) -> str | None:
@@ -9,4 +14,11 @@ def extract_full_text(url: str) -> str | None:
     Returns:
         Çekilen metin veya başarısız olunursa None.
     """
-    raise NotImplementedError
+    try:
+        downloaded = trafilatura.fetch_url(url)
+        if not downloaded:
+            return None
+        return trafilatura.extract(downloaded) or None
+    except Exception as exc:
+        logger.warning("Text extraction failed for %s: %s", url, exc)
+        return None

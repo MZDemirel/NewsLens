@@ -10,9 +10,9 @@ celery_app = Celery(
 )
 
 celery_app.conf.beat_schedule = {
-    # "fetch-feeds-every-hour": {
-    #     "task": "app.tasks.scraping_tasks.fetch_all_feeds",
-    #     "schedule": 3600.0,
-    # },
+    "fetch-feeds-every-hour": {
+        "task": "app.tasks.scraping_tasks.fetch_all_feeds_task",
+        "schedule": 3600.0,
+    },
 }
 celery_app.conf.timezone = "Europe/Istanbul"
